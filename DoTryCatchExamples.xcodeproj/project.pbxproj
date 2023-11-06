@@ -11,6 +11,8 @@
 		A7CA5D872AF3D650005C813B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D862AF3D650005C813B /* ContentView.swift */; };
 		A7CA5D892AF3D651005C813B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CA5D882AF3D651005C813B /* Assets.xcassets */; };
 		A7CA5D8C2AF3D651005C813B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CA5D8B2AF3D651005C813B /* Preview Assets.xcassets */; };
+		A7CA5D942AF3D6AE005C813B /* DoTryCatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D932AF3D6AE005C813B /* DoTryCatchViewModel.swift */; };
+		A7CA5D972AF3D77D005C813B /* DoTryCatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D962AF3D77D005C813B /* DoTryCatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A7CA5D862AF3D650005C813B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7CA5D882AF3D651005C813B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CA5D8B2AF3D651005C813B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7CA5D932AF3D6AE005C813B /* DoTryCatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatchViewModel.swift; sourceTree = "<group>"; };
+		A7CA5D962AF3D77D005C813B /* DoTryCatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		A7CA5D832AF3D650005C813B /* DoTryCatchExamples */ = {
 			isa = PBXGroup;
 			children = (
+				A7CA5D952AF3D767005C813B /* Manager */,
+				A7CA5D922AF3D68A005C813B /* ViewModel */,
 				A7CA5D842AF3D650005C813B /* DoTryCatchExamplesApp.swift */,
 				A7CA5D862AF3D650005C813B /* ContentView.swift */,
 				A7CA5D882AF3D651005C813B /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				A7CA5D8B2AF3D651005C813B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7CA5D922AF3D68A005C813B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA5D932AF3D6AE005C813B /* DoTryCatchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7CA5D952AF3D767005C813B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA5D962AF3D77D005C813B /* DoTryCatchManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CA5D942AF3D6AE005C813B /* DoTryCatchViewModel.swift in Sources */,
 				A7CA5D872AF3D650005C813B /* ContentView.swift in Sources */,
+				A7CA5D972AF3D77D005C813B /* DoTryCatchManager.swift in Sources */,
 				A7CA5D852AF3D650005C813B /* DoTryCatchExamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

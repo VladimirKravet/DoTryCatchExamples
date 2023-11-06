@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = DoTryCatchViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(viewModel.text)
+                .frame(width: 300, height: 300)
+                .background(.blue)
+                .onTapGesture {
+                    viewModel.fetchTitle()
+                }
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
